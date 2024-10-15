@@ -20,13 +20,16 @@ class _DetailProdukState extends State<DetailProduk> {
         title: const Text('Detail Produk'),
         backgroundColor: Colors.blue,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('Kode Produk : ' + widget.kodeProduk),
-          Text('Nama Barang : ${widget.namaProduk}'),
-          Text('Harga : ${widget.harga.toString()}'),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.only(left: 8.0, top: 8.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('Kode Produk : ' + widget.kodeProduk),
+            Text('Nama Barang : ${widget.namaProduk}'),
+            Text('Harga : ${widget.harga.toString()}'),
+          ],
+        ),
       ),
     );
   }
